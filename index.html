@@ -10,8 +10,11 @@
       <a href="test.com" target="_blank" id="link1">e</a>
     </div>
     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-      document.getElementById("link1").click();
+      $(document).ready(function () {
+        $("#link1").trigger("click");
+      });
     </script>
   </body>
 </html>
